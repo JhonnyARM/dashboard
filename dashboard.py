@@ -32,7 +32,7 @@ ganancias_plot.vbar(x='Fecha', top='Ganancias', width=0.5, source=source)
 # Crear gráfico de dispersión para ventas
 scatter_plot = figure(title="Dispersión de Ventas", x_axis_label='Fecha', y_axis_label='Ventas',
                       x_axis_type='datetime', width=800, height=300)
-scatter_plot.circle(x='Fecha', y='Ventas', source=source, size=8, color="navy", alpha=0.5)
+scatter_plot.scatter(x='Fecha', y='Ventas', source=source, size=8, color="navy", alpha=0.5)
 
 # Crear gráfico de área para ganancias
 area_plot = figure(title="Área de Ganancias", x_axis_label='Fecha', y_axis_label='Ganancias',
